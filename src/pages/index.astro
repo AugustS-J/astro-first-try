@@ -1,0 +1,51 @@
+---
+import "../styles/styles.css";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import Button from "../components/Button.astro";
+---
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjem</title>
+</head>
+<body>
+    <main>
+		<div class="knap-container">
+		<Button variant="primary" size="medium">Tilmeld dig</Button>
+		<Button variant="secondary" size="medium">Log på</Button>
+		</div>
+		<div class="top-container">
+		<h2>Spotify-playlister</h2>
+		<h4>Vis alle</h4>
+		</div>
+		<div class="playliste-container">
+			<Nav />
+		<Card header="Today's Top Hits" text="Jung Kook is on top of the Hottest 50!">
+			<img src="https://picsum.photos/id/65/150/150" alt="playliste1">
+		</Card>
+		<Card header="RapCaviar" text="New music from Drake, Rod Wave and Doja Cat.">
+			<img src="https://picsum.photos/id/68/150/150" alt="playliste2">
+		</Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s.">
+			<img src="https://picsum.photos/id/76/150/150" alt="playliste3">
+		</Card>
+		<Card header="Rock Classics" text="Rock legends & epic songs that continue to...">
+			<img src="https://picsum.photos/id/240/150/150" alt="playliste4">
+		</Card>
+		<Card header="Chill Hits" text="Kick back to the best new and recent chill hits.">
+			<img src="https://picsum.photos/id/331/150/150" alt="playliste5">
+		</Card>
+		<Card header="Sleep" text="Gentle Ambient piano to help you fall asleep.">
+			<img src="https://picsum.photos/id/325/150/150" alt="sleep1">
+		</Card>
+		<Card header="DayDreamer" text="Drift away with enthrailing instrumentals.">
+			<img src="https://picsum.photos/id/334/150/150" alt="sleep1">
+		</Card>
+		</div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+---
+const { header, text } = Astro.props;
+---
+
+<article class="card">
+			<slot />
+			<h3>{header}</h3>
+				<p>{text}</p>
+        </article>
+		<style>
+		</style>

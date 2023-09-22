@@ -1,0 +1,76 @@
+:root {
+  --primary-font-color: #b3b3b3;
+  --secondary-font-color: white;
+  --primary-background-color: linear-gradient(to bottom, #535353, #121212);
+  --secondary-background-color: #212121;
+  --tertiary-background-color: white;
+  --quaternary-background-color: black;
+  --primary-font-family: Gotham;
+  --primary-font-size: 1rem;
+  --secondary-font-size: 0.75rem;
+  --tertiary-font-size: 0.5rem;
+}
+main {
+  background: var(--primary-background-color);
+}
+.knap-container {
+  display: flex;
+  padding: 25px;
+  background-color: var(--quaternary-background-color);
+  justify-content: flex-end;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+h2,
+h3,
+p,
+a {
+  font-family: var(--primary-font-family);
+}
+h2 {
+  color: var(--secondary-font-color);
+  padding-top: 25px;
+  padding-left: 25px;
+}
+h3 {
+  color: var(--secondary-font-color);
+  font-size: var(--primary-font-size);
+}
+p {
+  color: var(--primary-font-color);
+  font-size: var(--secondary-font-size);
+}
+h4 {
+  font-family: var(--primary-font-family);
+  color: var(--secondary-font-color);
+  font-size: var(--secondary-font-size);
+  padding-top: 25px;
+  padding-right: 25px;
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playliste-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-start: 2;
+  gap: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+.playliste-container nav {
+  grid-row: span 2;
+  grid-column: 1;
+}
+.card {
+  background-color: var(--secondary-background-color);
+  padding: 20px;
+  border-radius: 7px;
+}
