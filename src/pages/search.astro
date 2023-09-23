@@ -5,7 +5,7 @@ import Card from "../components/Card.astro";
 import Button from "../components/Button.astro";
 import Navigation from "../components/Navigation.astro";
 ---
-<MainLayout title="Udforsk alle">
+<MainLayout hasSearch={true} title="Udforsk alle">
     <div class="knap-container">
 		<Button variant="primary" size="medium">Tilmeld dig</Button>
 		<Button variant="secondary" size="medium">Log på</Button>
@@ -63,7 +63,7 @@ import Navigation from "../components/Navigation.astro";
     </div>
     </div>
 </Card>
-<Card>
+<Card newBadge={true}>
     <div class="image-container" style="background-color: #785cfc;">
         <h3>Livebegivenheder</h3>
     <div class="overlay">
