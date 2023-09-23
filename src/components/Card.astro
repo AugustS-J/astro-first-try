@@ -1,11 +1,14 @@
 ---
-const { header, text } = Astro.props;
+const { header, text, newBadge } = Astro.props;
 ---
 
 <article class="card">
 			<slot />
+			{newBadge && <p>NY</p>}
 			<h3>{header}</h3>
 				<p>{text}</p>
         </article>
+		
 		<style>
+
 		</style>

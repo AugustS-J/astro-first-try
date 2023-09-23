@@ -5,12 +5,13 @@ const {variant, size} = Astro.props;
 <button class={variant + " " + size}><slot /></button>
 
 <style>
-    .primary, .secondary {
+    .primary, .secondary, .tertiary {
         font-family: var(--primary-font-family);
-        font-size: var(--primary-font-size);
+        font-size: var(--secondary-font-size);
+        font-weight: 500;
+        padding: 5px;
         border-radius: 35px;
-        padding: 20px;
-        margin-left: 15px;
+        margin-left: 10px;
         border: none;
         text-align: center;
     }
@@ -20,6 +21,17 @@ const {variant, size} = Astro.props;
     }
 .secondary {
     background-color: var(--tertiary-background-color);
-    border
+}
+.tertiary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-font-color);
+    font-size: var(--tertiary-font-size);
+    background-color: var(--secondary-background-color);
+}
+.tertiary img {
+    color: white;
+    background-color: white;
 }
 </style>

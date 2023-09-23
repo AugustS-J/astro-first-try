@@ -1,17 +1,107 @@
 ---
 import "../styles/styles.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
+import Navigation from "../components/Navigation.astro";
 ---
-
-<!DOCTYPE html>
-<html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Søg</title>
-</head>
-<body>
-    <main>
-
-    </main>
-</body>
+<MainLayout title="Udforsk alle">
+    <div class="knap-container">
+		<Button variant="primary" size="medium">Tilmeld dig</Button>
+		<Button variant="secondary" size="medium">Log på</Button>
+        <div class="søgeknap-container">
+        <Button variant="tertiary" size="medium">
+            <img src="../public/icons/search-icon.svg" alt="">
+            Hvad vil du lytte til?</Button>
+        </div>
+		</div>
+        <div class="top-container">
+		<h2>Udforsk alle</h2>
+		</div>
+        <div class="udforsk-container">
+            <Navigation />
+<Card>
+    <div class="image-container" style="background-color: #28846c;">
+        <h3>Podcasts</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/349/150/150" alt="Overlags billede">
+    </div>
+    </div>
+</Card>
+<Card newBadge={true}>
+    <div class="image-container" style="background-color: #203464;">
+        <h3>Specielt til dig</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/364/150/150" alt="Overlags billede">
+        <div class="text"><p>Pop Mix</p></div>
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #906cac;">
+        <h3>Hitlister</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/65/150/150" alt="Overlags billede">
+        <div class="text2"><p>Top Songs Global</p></div>
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #f0145c;">
+        <h3>Nye udgivelser</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/68/150/150" alt="Overlags billede">
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #906cac;">
+        <h3>Opdag</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/68/150/150" alt="Overlags billede">
+        <div class="text"><p>Your Discover Weekly</p></div>
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #785cfc;">
+        <h3>Livebegivenheder</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/240/150/150" alt="Overlags billede">
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #b89ccc;">
+        <h3>Nye Udgivelser</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/331/150/150" alt="Overlags billede">
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #f83ca4;">
+        <h3>Pop</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/325/150/150" alt="Overlags billede">
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #a0f4e4;">
+        <h3>Sommer</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/334/150/150" alt="Overlags billede">
+    </div>
+    </div>
+</Card>
+<Card>
+    <div class="image-container" style="background-color: #d8f47c;">
+        <h3>Party</h3>
+    <div class="overlay">
+        <img src="https://picsum.photos/id/338/150/150" alt="Overlags billede">
+    </div>
+    </div>
+</Card>
+</div>
+</MainLayout>
